@@ -294,3 +294,7 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
+
+# why did they want a multi-key combo to switch windows?
+bind p previous-window
+bind n next-window
