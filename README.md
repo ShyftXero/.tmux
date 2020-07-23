@@ -23,7 +23,7 @@ cd
 git clone https://github.com/ShyftXero/.tmux.git
 ln -s -f .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
-echo "alias tmux='tmux attach || tmux'" | tee ~/.bashrc ~/.zshrc
+echo "alias tmux='tmux attach || tmux'" | tee -a ~/.bashrc ~/.zshrc
 ```
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
