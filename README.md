@@ -18,11 +18,12 @@ Requirements:
 To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
-```
-$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+```bash
+cd
+git clone https://github.com/ShyftXero/.tmux.git
+ln -s -f .tmux/.tmux.conf
+cp .tmux/.tmux.conf.local .
+echo "alias tmux='tmux attach || tmux'" | tee ~/.bashrc ~/.zshrc
 ```
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
