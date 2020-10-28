@@ -332,11 +332,9 @@ tmux_conf_copy_to_os_clipboard=false
 # move status line to top
 #set -g status-position top
 
-<<<<<<< HEAD
 # why did they want a multi-key combo to switch windows?
 bind p previous-window
 bind n next-window
-=======
 
 # -- custom variables ----------------------------------------------------------
 # to define a custom #{foo} variable, define a POSIX shell function between the
@@ -361,4 +359,3 @@ bind n next-window
 #
 # "$@"
 # # /!\ do not remove the previous line
->>>>>>> upstream/master
