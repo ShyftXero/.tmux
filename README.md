@@ -114,7 +114,7 @@ Features
  - configurable new windows and panes behavior (optionally retain current path)
  - SSH/Mosh aware split pane (reconnects to remote server)
  - copy to OS clipboard (needs [`reattach-to-user-namespace`][reattach-to-user-namespace]
-   on macOS, `xsel` or `xclip` on Linux)
+   on macOS, `xsel`, `xclip`, or `wl-copy` on Linux)
  - support for 4-digit hexadecimal Unicode characters
  - [Facebook PathPicker][] integration if available
  - [Urlview][] integration if available
@@ -311,6 +311,11 @@ This configuration now comes with built-in [TPM] support:
 - ⚠️ do not add `run '~/.tmux/plugins/tpm/tpm'` to `~/.tmux.conf` or your
 - `~/.tmux.conf.local` copy ← people who are used to alter
   `.tmux.conf` to add TPM support will have to adapt their configuration
+
+⚠️ The TPM bindings differ slightly from upstream:
+  - installing plugins: `<prefix> + I`
+  - uninstalling plugins: `<prefix> + Alt + u`
+  - updating plugins: `<prefix> + u`
 
 See `~/.tmux.conf.local` for instructions.
 
